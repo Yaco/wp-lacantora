@@ -1,0 +1,571 @@
+0/*
+Theme Name: La Cantora 2014 FINAL!!!
+Theme URI: http://lacantora.org.ar/
+* 
+*/
+
+@font-face
+{
+font-family: 'DataTrash';
+src: url('font/data.ttf');
+} 
+
+@font-face
+{
+font-family: Raw;
+src: url('font/rawstreetwall.ttf');
+} 
+
+@font-face
+{
+font-family: Univers;
+src: url('font/univers.otf');
+}  
+
+@font-face
+{
+font-family: "Data";
+src: url('font/data.ttf');
+} 
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Economica',sans-serif;
+  overflow-x: hidden;
+	background: #dde8e8;
+}
+
+h1,h2,h3,h4,h5,h6 {
+ color: #151515;
+ font-family: 'Data',sans-serif; 
+ line-height: 120%;
+}
+
+ul, li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#menu-1 {
+	
+}
+
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover, #contenido-derecha-page a:hover {
+	color: yellow;
+
+}
+
+/* CABECERA  */
+
+#cabecera {
+  position: fixed;
+  background: url("images/fondo-sup-3.png") repeat-x scroll center 0 transparent;
+  height: 150px;
+  width: 100%;
+  z-index: 15;
+}
+
+
+#cabecera-medio {
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+	z-index: 1;
+}
+
+#cabecera-medio-barra {
+  width: 1000px;
+  margin-top: 122px;
+  float:left;
+
+}
+
+#cabecera-link-home {
+    display: block;
+    height: 108px;
+    position: fixed;
+    width: 66%;
+}
+
+.cabecera-medio-barra-btn {
+  width: 24px;
+  height: 24px;
+  float: right;
+  display: block;
+  opacity: 0.8;
+  margin-right: 3px;
+}
+
+.cabecera-medio-barra-btn:hover {
+  opacity: 1;
+}
+
+#btn-fb {
+  background: url('images/btn_fb.png') no-repeat;	
+}
+
+#btn-tw {
+  background: url('images/btn_tw.png') no-repeat;	
+}
+
+#btn-rss {
+  background: url('images/btn_rss.png') no-repeat;	
+}
+
+#cabecera-menu {
+  background: black;
+  padding: 2px;
+  float: left;
+}
+
+#cabecera-menu li {
+  display: inline;
+  color: white;
+
+}
+
+/* NAVEGACION */
+
+nav {
+	float: left;
+	margin-left: 208px;
+	font-family: "Rationale";
+}
+
+#menu-1 {
+
+	
+	
+}
+
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+
+nav ul {
+	background: black; 
+	padding: 4px 0px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	color: white;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+	nav ul li {
+		float: left;
+		padding: 0 10px;
+	}
+		nav ul li:hover {
+    background: rgba(0,0,0,0.2);
+			color: yellow;
+			cursor: pointer;
+		}
+			nav ul li:hover a {
+				color: #fff;
+			}
+		
+		nav ul li a {
+			display: block; 
+			color: #757575; text-decoration: none;
+		}
+			
+		
+	nav ul ul {
+    background: rgba(0,0,0,0.6);
+    left: -100px;
+    padding: 0;
+    position: fixed;
+    top: 146px;
+    width: 50%;
+		text-align: right;
+		 height: 372px;
+	}
+		nav ul ul li {
+			float: none; 
+			position: relative;
+			padding: 10px 15px 5px 0;
+			text-align: right;
+		}
+		
+		
+		
+			nav ul ul li a {
+
+				color: #fff;
+			}	
+				nav ul ul li a:hover {
+/* 					background: #4b545f; */
+					color: #ccc;
+				}
+		
+	nav ul ul ul {
+		position: absolute; left: 100%; top:0;
+	}
+		
+
+/* CATEGORIAS */
+.categorias {
+   position: relative;
+   text-transform: uppercase;
+   z-index: 11;
+   float: left;
+   padding: 0 20px;
+}
+.post-categories > li  {
+	background: black;
+	color: white;
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 3px;
+	font-size: 12pt;
+}
+
+/* BUSCADOR  */
+
+
+#buscador {
+  float:right;
+
+}
+
+#buscador-caja {
+    box-shadow: 0 0 8px 2px #ECECEC;
+    background: #ECECEC;
+    border:none;
+    width: 130px;
+    padding: 2px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+#buscador-caja:focus {
+    box-shadow: 0 0 8px 4px #F7F7F7;
+    background: white;
+}
+
+/* COLUMNAS DEL MEDIO */
+
+#centro-1 {
+  position: fixed;
+  right: 50%;
+  top: 148px;
+}
+
+#centro-1 .fondo {
+  margin-right: 100px;
+}
+
+#centro-2 {
+/*  background: #ecf2f2;*/
+  position: absolute;
+  left: 46%;
+  top: 148px;
+/*   height: 1000px; */
+  width: 50%;
+}
+
+#columna-central {
+    display: inline-table;
+    float: left;
+    height: 200%;
+    left: -100px;
+    position: relative;
+    width: 100px;
+}
+
+#columna-notas {
+  margin: 12px;
+  width: 176px;
+  float:left;
+  background: #cbbfb8;
+}
+
+#notas-imagenes {
+  float:left;
+	padding: 23px 23px 35px;
+}
+#notas-imagenes li {
+	height:185px;
+}
+
+#notas-imagenes img {
+  cursor: pointer;
+	height: 150px;
+	width: 130px;
+}
+
+.notas-imagenes-activa {
+	border: 10px white solid;
+	margin: -10px !important;
+/* 	-moz-box-sizing: border-box; */
+}
+.columna-nota {
+	left: 0;
+	position: relative;
+	top: 0;
+	width: 470px;
+}
+
+#columna-nota-tapa {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+    height: 100%;
+    left: 100px;
+    position: absolute;
+    top: 0;
+    width: 470px;
+    z-index: 9;
+		display: none;
+}
+
+#columna-nota-tapa-foto {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+    height: 250px;
+    left: 0;
+    position: relative;
+    top: 0px;
+    width: 470px;
+    z-index: 9;
+}
+
+.columna-nota-simple {
+	max-width: 600px; 
+	float: left; 
+	font-size: 110%;
+	padding-bottom: 100px;
+}
+
+.columna-nota-simple a {
+	color: #990000;
+}
+
+.columna-nota-simple a:hover {
+	color: #cc0000;
+}
+
+.columna-nota-simple a:visited {
+	color: #330000;
+}
+
+.columna-nota-simple blockquote {
+    border-left: 10px solid #CCCCCC;
+    font-size: 17pt;
+    padding-left: 15px;	
+}
+
+.titulo-imagen:hover {
+/*  width: 470px;
+  height: 250px;
+  background-image: none !important;
+	background-color: black !important;*/
+
+}
+
+.titulo-imagen {
+	width: 470px;
+  height: 250px;
+}
+
+.titulo-imagen h2 {
+    color: #FFFFFF;
+    font-size: 36pt;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 52pt;
+    margin: 0px;
+    padding: 6px 20px;
+    text-transform: uppercase;
+    width: 400px;
+		position: relative;
+		z-index: 11;
+		float:left;
+}
+
+.titulo-imagen h2 a:hover{
+    color: #FFFFFF;
+}
+
+
+.titulo-audio {
+	background: url("images/fondo-titulo.png") no-repeat scroll 10px bottom transparent;
+	margin-bottom: 13px !important;
+}
+
+.titulo-bajada {
+   color: #000000;
+    float: left;
+    max-width: 390px;
+    padding: 20px 10px;
+		 font-size: 13pt;
+}
+
+#radio-botones {
+	float: left;
+	margin-left: 140px;
+}
+
+#radio-play {
+	background: url("images/btn_play.png") no-repeat;
+	opacity: 0.8;
+	float: left;
+	width: 48px;
+	height: 48px;
+	margin: 10px 0 0 5px;
+}
+
+#radio-mas {
+	background: url("images/btn_mas.png") no-repeat;
+	opacity: 0.8;
+	float: left;
+	width: 48px;
+	height: 48px;
+	margin: 10px 0 0 5px;
+}
+
+
+#radio-play:hover, #radio-mas:hover {
+	opacity: 1;
+
+}
+.boton-1 {
+	padding: 5px;
+	background: black;
+	color: white;
+}
+
+#radio {
+    background: none repeat scroll 0 0 rgba(203, 191, 184, 0.1);
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 105px;
+    top: 0;
+    width: 400px;
+    z-index: 0;
+}
+
+#radio:hover {
+    background: none repeat scroll 0 0 rgba(203, 191, 184, 0.7);
+}
+
+.radio-fija {
+    background: none repeat scroll 0 0 rgba(203, 191, 184, 0.7) !important;
+	
+}
+.radio-titulo h2 {
+    color: #000;
+    font-size: 36pt;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 52pt;
+    margin: 0px;
+    padding: 6px 20px;
+    text-transform: uppercase;
+    width: 350px;
+	float:left;
+	overflow: hidden;
+}
+
+.radio-titulo h2 a, .radio-titulo h2 a:hover {
+		color: black;
+}
+
+.radio-descripcion {
+	color: #000000;
+	float: left;
+/* 	max-width: 390px; */
+	padding: 0px 20px;
+	font-size: 14pt;	
+	font-weight: bold;
+}
+
+.titulo-seccion {
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 8px;
+    margin: 10px 0 -10px 16px;
+    text-transform: uppercase;
+		float:left;
+		color: white;		
+		z-index: 11;
+		position: relative;
+}
+
+
+
+#pie {
+    background: none repeat scroll 0 0 #000000;
+    bottom: 0;
+    color: #FFFFFF;
+    float: left;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 0;
+	
+}
+
+#pie-contenido {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#pie-licencia {
+	float: left;
+	width: 340px;
+	text-align: left;
+	padding-left: 60px;
+	background: url("images/logo.png") no-repeat scroll 0px 10px transparent;
+	color: #ccc;
+}
+
+#pie-licencia b {
+	color: white;
+	
+}
+
+#pie-boletin {
+    border-left: 1px solid #CCCCCC;
+    float: right;
+    font-size: 105%;
+    text-align: right;
+    width: 126px;
+	    padding-left: 10px;
+}
+
+
+/* TUBEPRESS CUSTOMIZATIONS */
+
+.tubepress_container {
+	margin-top: 20px;
+}
+.tubepress_normal_embedded_wrapper > div {
+	 color: #151515;
+	font-family: 'Data',sans-serif; 
+	line-height: 120%;
+    font-weight: normal !important;
+    margin-bottom: 20px !important;
+}
+
+.tubepress_thumb {
+    padding: 0 9px;
+}
+
+dd.tubepress_meta_title, dd.tubepress_meta_title a, dd.tubepress_meta_title a:hover {
+    font-size: 15px !important;
+}
